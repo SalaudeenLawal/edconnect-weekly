@@ -40,26 +40,31 @@
     </nav>
    <main role="main">
        <div class="container">
-           <h2 class="header"> Project Gallery</h2>
-           <div class="container">
-                <div class="row bg-light p-3">
-                    <div class="col-md-7">
-                        <input type="text" class="form-control" name="searchTerm" placeholder="Search project name,authors, abstract and tags">
-                    </div>
-                    <div class=" col-md-3 input-group px-0">
-                     <span class="input-group-text" >Search by</span>
-                       <select name="searchType" id="searchType" class="form-control">
-                           <option selected>Name</option>
-                           <option value="Abstract">Abstract</option>
-                           <option value="Authors">Authors</option>
-                           <option value="Tags">Tags</option>
-                       </select>
+        <h2 class="header"> Project Gallery</h2>
+           <div class="bg-light p-3">
+           
+               <form action="" class="form-group">
+                   
+                   <div class="row form-row mx-auto px-auto">
+                       <div class="col-md-7 ">
+                            <input type="text" name="searchTerm" id="" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
+                       </div>
+                       <div class="col-md-3 input-group px-3">
+                        <span class="input-group-text form-label" >Search by</span>
+                        <select name="searchType" id="searchType" class="form-control form-control-lg">
+                            <option selected>Name</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Authors">Authors</option>
+                            <option value="Tags">Tags</option>
+                        </select>
                     </div>
                     <div class="col-md-2 px-0">
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <a href="" class="btn btn-primary btn-lg" role="button">Submit</a>
                     </div>
-                </div>
-           </div>   
+                   </div>
+               </form>
+           </div>
+             
        </div>
        <div class="container">
             <h3 class="h3">All Projects <span class="text-muted" id="muted">(0 results)</span></h3>
