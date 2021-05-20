@@ -70,25 +70,25 @@
                         <hr>
 
                             <fieldset class="form-group">
-                                <label>Project Name</label>
-                                <input class="form-control" type="text" name="name" size="74" maxlength="50" value="Technology">
+                                <label for="name" class="form-label">Project Name</label>
+                                <input class="form-control" type="text" name="name" size="74" maxlength="50" value="Project 1">
                             </fieldset>
 
                             <fieldset class="form-group">
-                                <label>Project Abstract</label>
-                                <textarea class="form-control" name="abstract" size="20" maxlength="100" rows="10" cols="56" placeholder="Maximum of 100 characters">Researching the areas technology has helped in the world, access of Nigerians to technology and solutions to technological problems</textarea>
+                                <label class="projectAbstract" class="form-label"> Project abstract</label>
+                                <textarea class="form-control" name="abstract" size="20" maxlength="100" rows="10" cols="56" placeholder="Maximum of 100 characters">Project 1 is a very interesting project</textarea>
                             </fieldset>
 
                             <fieldset class="form-group">
-                                <label>Author(s)</label>
-                                <input class="form-control" type="text" name="authors" size="74" maxlength="50" value="Ade James, Brian Olaoluwa">
+                                <label for="" class="form-label">Author(s)</label>
+                                <input class="form-control" type="text" name="authors" size="74" maxlength="50" value="Ade Chris">
                             </fieldset>
 
                             <fieldset class="form-group">
-                                <label>Tag(s)</label>
-                                <input class="form-control" type="text" name="tags" size="74" maxlength="50" value="#yaml, #ejs">
+                                <label for="tags" class="form-label">Tag(s)</label>
+                                <input class="form-control" type="text" name="tags" size="74" maxlength="50" value="#web">
                             </fieldset>
-                            <button class="btn btn-primary" type="submit">Save</button>
+                            <button class="btn btn-primary btn-lg btn-primary" type="submit">Save</button>
 
                     </div>
 
@@ -97,15 +97,16 @@
                         <h3>Manage Project files</h3>
                         <hr>
 
-                        <fieldset class="form-group">
-                            <input class="form-control-file" type="file">
-                        </fieldset>
-
+                        <div class="input-group mb-2">
+                            <input type="text" name="projectFile" id=""  placeholder="click to open file browser" class="form-control">
+                            <span class="input-group-text">Browse</span>
+                        </div>
+                            <hr>
                         <div class="card">
                             <div class="card-header">
                                 <b>Project files</b>
                             </div>
-                            <div class="card-block" style="text-align: center; padding-top: 10px; padding-bottom: 10px">
+                            <div class="card-body mx-auto">
                                 <p class="card-text">No file uploaded yet</p>
                             </div>
                         </div>
