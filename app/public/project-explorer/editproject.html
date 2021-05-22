@@ -61,15 +61,13 @@
                 
             
         </div>
-
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+       
+        <div class="row">
+                <div class="col">
+                    <div class="container-fluid mx-auto"  style=" width:480px; margin-top: 70px;">
+                        <h3>Edit Project</h3>
                         <form action="">
-                            <div class="form-col">
                                 <div class="form-group">
-                                    <h3>Edit Project</h3>
-                                    <hr>
                                         <label for="name" class="form-label"> Project name</label><br>
                                         <input type="text" name="name" class="form-control" placeholder="Project 1">
                                 </div>
@@ -85,40 +83,38 @@
                                     <label for="tags" class="form-label">Tag(s)</label>
                                     <input type="text" name="tags" class="form-control" placeholder="#web">
                                 </div>
-                                <button class="btn btn-lg btn-primary btn-block  col-md-3" type="submit">Save</button>
-        
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <form action="">
-                            <div class="form-col">
-                                <h3> Manage Project files</h3>
-                                <hr>    
-                                <div class="form-group">
-                                    <div class="custom-file">
-                                        <input type="file" name="projectFile" id="customFile" class="custom-file-input ">
-                                         <label for="customFile" class="custom-file-label" >Choose file</label>
-                                     </div>
-                                     <hr>
-                                       
+                                <div class="mt-3">
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
                                 </div>
-                                <div class="form-group">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Project files
-                                        </div>
-                                        <div class="card-body">
-                                           <p class="cad-text text-center">No file uploaded yet</p> 
-                                        </div>
-                                    </div>
-                                </div>
-                                   
-                            </div>
                         </form>
-                       
-                    </div>
+                    </div>  
                 </div>
+                    <div class="col">
+                        <div class="container-fluid mx-auto" style="width: 480px; margin-top: 70px;">
+                            <h3> Manage Project files</h3>
+                            <form action="">   
+                                    <div class="form-group">
+                                        <div class="custom-file">
+                                            <input type="file" name="projectFile" id="customFile" class="custom-file-input ">
+                                             <label for="customFile" class="custom-file-label" >Choose file</label>
+                                         </div>
+                                           
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Project files
+                                            </div>
+                                            <div class="card-body">
+                                               <p class="cad-text text-center">No file uploaded yet</p> 
+                                            </div>
+                                        </div>
+                                    </div> 
+                            </form>    
+                        </div>
+
+                    </div>
+                
             </div>
 
         
